@@ -3,6 +3,11 @@ import { Accordion, ThemeIcon, Text } from "@mantine/core";
 import { Planet as PlanetIcon } from 'tabler-icons-react';
 import { Planet } from "../types";
 
+/**
+ * Renders a single planet
+ * 
+ * @param planet planet to render
+ */
 const PlanetDisplay = (planet: Planet) => (
   <Accordion.Item
     style={{ marginLeft: "20px" }}

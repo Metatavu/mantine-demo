@@ -6,10 +6,16 @@ import PlanetDisplay from "./PlanetDisplay";
 import { useNetwork } from '@mantine/hooks';
 import { showNotification } from "@mantine/notifications";
 
+/**
+ * Renders a list of planets
+ */
 const Planets = () => {
   const [ planets, setPlanets ] = useState<Planet[]>([]);
   
-  const loadPlanets = async () => {
+  /**
+   * Loads all planets
+   */
+  const loadPlanets = () => {
     const foundPlanets = getPlanets();
     setPlanets(foundPlanets);
   }

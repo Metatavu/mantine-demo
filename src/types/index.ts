@@ -1,3 +1,6 @@
+/**
+ * All properties of a planet that is rendered
+ */
 export interface Planet {
   name: string;
   hostName: string;
